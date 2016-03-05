@@ -2,7 +2,10 @@
 1010, 3836541149, 5, Art of the 20th Century, Ingo F. Walther, 12/15/2012, Taschen, Art
 1020, 9780789324689, 12, Understanding Modern Art, Sam Phillips, 3/19/2013, Universe, Art
 1030, 1419707531, 7, How to Read Contemporary Art, Michael Wilson, 5/14/2013/, Harry Abrams, Art
-1040, 039335167X, 15, 33 Artists in 3 Acts, Sarah Thorton, 9/8/2015/, W.W. Norton & Co, Art
-
-
-
+1040, 039335167X, 15, 33 Artists in 3 Acts, Sarah Thorton, 9/8/2015, W.W. Norton & Co, Art
+1050, 9781591845577, 10, The Personal MBA, Josh Kaufman, 8/28/2012, Porfolio, Business & Economics
+1060, 1451639619, 14, The 7 Habits of Highly Effective People, Stephen Covey, 11/19/2013, Simon & Schulster, Business & Economics
+1070, 1612680208, 20, Guide to Investing, Robert Kiyosaki, 4/3/2012, Plata Publishing, Business & Economics
+1080, 1937832058, 8, Tax Free Wealth, Tom Wheelwright, 5/26/2015, RDA Press, Business & Economics
+1090, 0471711780, 10, Loopholes of the Rich, Diane Kennedy, 12/20/2004, Wiley, Business & Economics
+1100, 0071807810, 20, How to Pay Zero Taxes, Jeff Schnepper, 12/3/2013, McGraw-Hill, Business & Economics
