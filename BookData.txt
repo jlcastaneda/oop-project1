@@ -1,0 +1,8 @@
+1000, 0756642809, 10, The Sewing Book, Alison Smith, 03/30/2009, DM Publishing, Art
+1010, 3836541149, 5, Art of the 20th Century, Ingo F. Walther, 12/15/2012, Taschen, Art
+1020, 9780789324689, 12, Understanding Modern Art, Sam Phillips, 3/19/2013, Universe, Art
+1030, 1419707531, 7, How to Read Contemporary Art, Michael Wilson, 5/14/2013/, Harry Abrams, Art
+1040, 039335167X, 15, 33 Artists in 3 Acts, Sarah Thorton, 9/8/2015/, W.W. Norton & Co, Art
+
+
+
