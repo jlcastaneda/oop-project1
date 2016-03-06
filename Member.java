@@ -10,6 +10,7 @@ public abstract class Member {
 	private String memberPasswd;
 	private double memberFee;
 	
+	/*
 	public Member()
 	{
 		memberID = 500;
@@ -21,9 +22,10 @@ public abstract class Member {
 		memberFee = 0.0;
 		
 	}
+	*/
 	
 	public Member(int memberID, String memberFName, String memberMidIni,
-			String memberLName, String memberPasswd, String memberEmail, double memberFee)
+			String memberLName, String memberEmail, String memberPasswd)
 	{
 		this.memberID = memberID;
 		this.memberFName = memberFName;
@@ -31,7 +33,6 @@ public abstract class Member {
 		this.memberLName = memberLName;
 		this.memberEmail = memberEmail;
 		this.memberPasswd = memberPasswd;
-		this.memberFee = memberFee;
 	}
 	
 	//Set member ID
@@ -75,4 +76,17 @@ public abstract class Member {
 	
 	//Get member fee
 	public double getMemberFee() { return memberFee; }
+	
+	//Override toString
+	@Override
+	public String toString()
+	{
+		return "User Information\n" + 
+				"Member ID: " + memberID + "\n" +
+				"First name: " + memberFName + "\n" +
+				"Middle Initial : " + memberMidIni + "\n" +
+				"Last Name: " + memberLName + "\n" +
+				"Email address: " + memberEmail + "\n" +
+				"Monthly fee: " + memberFee + "\n";
+	}
 }
