@@ -45,7 +45,7 @@ public class Book {
     @Override
     public String toString()
     {
-        return "Book ID: " + bID + "\n" + "ISBN: " + ISBN + "\n" + "Title: "+ title+"\n"+"In Stock: "+invAmnt+"\n";
+        return bID + ", " + ISBN + ", " + invAmnt+ ", " + title + ", "+ author + ", "+ pDate + ", "+ pub + ", "+ category;
     }
     
     
