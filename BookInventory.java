@@ -70,8 +70,10 @@ public class BookInventory {
 	try(Writer writer = new BufferedWriter((new OutputStreamWriter(new FileOutputStream("BookInventory.txt"), "utf-8")))){
             
             for(Book each: invItem){
-		writer.write(each+",");
+		writer.write(each+"\n");
+                
             }
+            writer.close();
         }
         catch(IOException ex){
             
