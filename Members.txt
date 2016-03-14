@@ -1,0 +1,7 @@
+500, Clark, N, Kent, clark@bookmart.com, super1, false, true, paypalClark
+501, Peter, N, Parker, peter@bookmart.com, spider1, true, false, paypalParker
+502, Bruce, N, Wayne, bruce@wayneinc.com, batman1, false, true, paypalWayne
+503, Wayne, N, Rooney, wayne@manu.com, goal1, false, true, paypalRooney
+504, Jose, L, Castaneda, jlc@gmail.com, passwerd1, true, false, paypalCas
+505, Jose, L, Castaneda, jlc1@gmail.com, password1, false, true, paypalCas
+506, Gene, N, Grey, wolf@bookmart.com, wolf1, true, false, paypalGrey

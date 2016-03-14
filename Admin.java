@@ -8,6 +8,7 @@ public class Admin {
 	private String adminLName;
 	private String adminEmail;
 	private String adminPasswd;
+	private boolean isAdmin = true;
 	
 	//Constructor to create administrator with parameters
 	public Admin(int adminID, String adminFName, String adminMidIni, 
@@ -19,6 +20,7 @@ public class Admin {
 		this.adminLName = adminLName;
 		this.adminEmail = adminEmail;
 		this.adminPasswd = adminPasswd;
+		this.isAdmin = true;
 	}
 	
 	//Set the admin id number
@@ -64,6 +66,9 @@ public class Admin {
 	
 	//Get the admin password
 	public String getAdminPasswd() { return adminPasswd; }
+	
+	//Get isAdmin value
+	public boolean getIsAdmin() { return isAdmin; }
 	
 	//Get admin data
 	@Override

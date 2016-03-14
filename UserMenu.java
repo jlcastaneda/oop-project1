@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class UserMenu {
 	
 	boolean exit;
+	//Student Student1 = new Student();
 	
 	public void displayMenu()
 	{
@@ -27,6 +28,7 @@ public class UserMenu {
 		System.out.println("1. View User History");
 		System.out.println("2. Search ISBN");
 		System.out.println("3. View book inventory");
+		System.out.println("4. Show student");
 		System.out.println("0. Exit");
 	}
 
@@ -36,7 +38,7 @@ public class UserMenu {
 		Scanner selection = new Scanner(System.in);
 		int choice = -9;
 		//System.out.println("Entering while loop\n");
-		while (choice < 0 || choice > 3)
+		while (choice < 0 || choice > 4)
 		{
 			//System.out.println("in while loop");
 			System.out.print("Enter selection: ");
@@ -63,17 +65,23 @@ public class UserMenu {
 		case 1:
 			//View user's history
 			System.out.print("View user history\n");
+			viewHistory();
 			break;
 				
 		case 2:
 			//Search user
 			System.out.print("Search ISBN\n");
+			searchISBN();
 			break;
 			
 		case 3:
 			//View book inventory
 			System.out.println("View book inventory\n");
+			viewBookInv();
 			break;
+			
+		case 4:
+			showStudent();
 		
 		default:
 			//Exit
@@ -81,5 +89,25 @@ public class UserMenu {
 			break;
 				
 		}
+	}
+	
+	public void viewHistory()
+	{
+		System.out.println("In viewHistory");
+	}
+	
+	public void searchISBN()
+	{
+		System.out.println("In searchISBN");
+	}
+	
+	public void viewBookInv()
+	{
+		System.out.println("In viewBookInv");
+	}
+	
+	public void showStudent()
+	{
+		//Student1.toString();
 	}
 }
