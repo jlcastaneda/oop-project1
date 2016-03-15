@@ -1,0 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package oopproj1;
+
+/**
+ *
+ * @author Josh
+ */
+public class OOPproj1 {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        //Example Inventory controller       
+        //most operations require the username of the user
+        String uName = "jgreen12";                  
+        //get inventory and print
+        BookInventory bI = new BookInventory();
+        bI.readInventory();
+        bI.printInventory();                
+        //stores inventory choice
+        int invNum = 0;                        
+        History h = new History();        
+        //print the user's History
+        h.printHistory(uName);        
+        //checkoutprocess
+        bI.invItem.get(invNum).checkOut();
+        h.checkOut(bI.invItem.get(invNum), uName);        
+        //Writes Inventory
+        bI.writeInventory();        
+    }    
+}
