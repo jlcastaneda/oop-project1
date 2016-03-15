@@ -25,6 +25,7 @@ public class History {
     }
     
     public void printHistory(String uName){
+    	histItem = new ArrayList<>();
         //prints the User's history
         readHistory(uName);
         System.out.println("User's History: ");
