@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package oopproj1;
+package oop_bookmart;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,21 +13,26 @@ import java.util.List;
  * @author Josh
  */
 public class History {
-    public List<Book> histItem = new ArrayList<>(); 
+    private List<Book> histItem = new ArrayList<>();
     //stores all book items that require history interaction
+    String uName;
     
-    
-    public void checkOut(Book b, String uName){
-        //check out function that completes required operations
-        readHistory(uName);
-        histItem.add(b);
-        writeHistory(uName);        
+    public History(String uName){
+        this.uName = uName;
     }
     
-    public void printHistory(String uName){
-    	histItem = new ArrayList<>();
+    public void checkOut(Book b){
+        //check out function that completes required operations
+        readHistory();
+        histItem.add(b);
+        writeHistory();        
+    }
+    
+    public void printHistory(){
+        histItem = new ArrayList<>();
         //prints the User's history
-        readHistory(uName);
+        //comment out or something
+        readHistory();
         System.out.println("User's History: ");
         
         for(Book each: histItem){
@@ -37,7 +42,8 @@ public class History {
     
     
     
-    public void readHistory(String uName){
+    public void readHistory(){
+        
         //reads users history
         try{
             //create buff read with an instance of file read
@@ -75,7 +81,7 @@ public class History {
         }
         catch(FileNotFoundException fnfe){
             System.out.println("User's history not found, creating new history file.");
-            createHistory(uName);
+            createHistory();
         }
         catch(IOException ioe){
             ioe.printStackTrace();
@@ -83,7 +89,7 @@ public class History {
     }
     
     
-    public void createHistory(String uName){
+    public void createHistory(){
         //creates a new history file
         try {
             //Whatever the file path is.
@@ -98,7 +104,7 @@ public class History {
         }
     }
     
-    public void writeHistory(String uName){
+    public void writeHistory(){
         //writes the user's history
         try(Writer writer = new BufferedWriter((new OutputStreamWriter(new FileOutputStream(uName+"_History.txt"), "utf-8")))){
             for(Book each: histItem){
