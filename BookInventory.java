@@ -29,7 +29,7 @@ public class BookInventory {
 
         try{
             //create buff read with an instance of file read
-            BufferedReader br = new BufferedReader(new FileReader("BookInventory.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("BookData.txt"));
             //read line
             String fileRead = br.readLine();
             while(fileRead != null){
@@ -69,15 +69,15 @@ public class BookInventory {
         }
     }
     public void printFullInventory(){   //prints the full inventory
+        readInventory();
         int x = 0;
 	for(Book each: invItem){
-            System.out.println(x+": ");
-            System.out.println(each);	
+            System.out.println(x+": "+each);	
             x++;
 	}
     }
     public void writeInventory(){        //writes inventory to a file
-	try(Writer writer = new BufferedWriter((new OutputStreamWriter(new FileOutputStream("BookInventory.txt"), "utf-8")))){
+	try(Writer writer = new BufferedWriter((new OutputStreamWriter(new FileOutputStream("BookData.txt"), "utf-8")))){
             
             for(Book each: invItem){
 		writer.write(each+"\n");
@@ -153,14 +153,10 @@ public class BookInventory {
         String bID = null;
         int found = 0;
         int count = 0;
-        int y;
-        System.out.println("1. Search for item");   //menu
-        System.out.println("2. Exit");
-        y = s.nextInt();    //selection
-        while(y == 1){
+
             
-            System.out.println("Please enter a book ID: ");
-            bID = s.nextLine(); //gives book id
+            System.out.print("Please enter a book ID: ");
+            bID = s.next(); //gives book id
             for(Book each: invItem){    //searches through each item in the list
                 if(bID.equals(invItem.get(count).bID)){
                     found = 1;
@@ -171,7 +167,6 @@ public class BookInventory {
             }
             if(found == 1){ //if found
                 //print item
-            
                 int x = 0;
                 System.out.println("Item Found: "+invItem.get(count));  //print book info
                 if(invItem.get(count).invAmnt > 0){
@@ -193,9 +188,8 @@ public class BookInventory {
             else{
                 System.out.println("Item not found with entered ID, moving to menu.");
             }
-            System.out.println("1. Search For Item");
-            System.out.println("2. Exit Menu");
-        }
+            
+        
     }
     
     
