@@ -85,7 +85,7 @@ public class LoginRegister {
 		boolean isFaculty = false;
 		int LogUserID = 0;
 		//String memberFile = "/home/jlcastaneda/Dropbox/workspace/oop_bookmart/src/oop_bookmart/Members.txt";
-		String memberFile = "src/oop_bookmart/Members.txt";
+		String memberFile = "Members.txt";
 		Scanner userLogin = new Scanner(System.in);
 		System.out.print("Enter your email address: ");
 		String checkEmail = userLogin.nextLine();
@@ -142,7 +142,7 @@ public class LoginRegister {
 	            	 }
 	            	 loginSuccess = true;
 	            	 System.out.println("Login successful");
-	            	 
+	            	 String uName = userEmail;  //Added by Josh
 	            	 //Create student user object
 	            	 if(isStudent == true)
 	            	 {
@@ -154,7 +154,7 @@ public class LoginRegister {
 	            		 //Create menu object	            	 
 	            		 UserMenu menu = new UserMenu();
 	            		 //Show user menu
-	            		 menu.displayMenu();
+	            		 menu.displayMenu(uName);
 	            	 }
 	            	 else
 	            	 {
@@ -166,7 +166,7 @@ public class LoginRegister {
 	            		 //Create menu object	            	 
 	            		 UserMenu menu = new UserMenu();
 	            		 //menu.showStudent();
-	            		 menu.displayMenu();
+	            		 menu.displayMenu(uName);
 	            	 }
 	      
 	            
@@ -207,7 +207,7 @@ public class LoginRegister {
 		boolean student = false;
 		boolean faculty = false;
 		boolean userExists = false;
-		String memberFile = "src/oop_bookmart/Members.txt";
+		String memberFile = "Members.txt";
 		System.out.println("New user ID = " + nextUserID);
 		
 		System.out.print("Enter email address: ");
@@ -293,7 +293,7 @@ public class LoginRegister {
 		int logUserID = 0;
 		//System.out.println("admin login method");
 		//String line = null;
-		String adminFile = "/home/jlcastaneda/Dropbox/workspace/oop_bookmart/src/oop_bookmart/AdminUsers.txt";
+		String adminFile = "AdminUsers.txt";
 		Scanner userLogin = new Scanner(System.in);
 		System.out.print("Enter your email address: ");
 		String checkEmail = userLogin.nextLine();
@@ -367,7 +367,7 @@ public class LoginRegister {
 	
 	public int getNextID()
 	{
-		String userFile = "/home/jlcastaneda/Dropbox/workspace/oop_bookmart/src/oop_bookmart/Members.txt";
+		String userFile = "Members.txt";
 		
 		//Determine available userID number
 		int nextID = 0;
@@ -404,7 +404,7 @@ public class LoginRegister {
 	
 	public boolean checkUserExists(String newEmail)
 	{
-		String userFile = "/home/jlcastaneda/Dropbox/workspace/oop_bookmart/src/oop_bookmart/Members.txt";
+		String userFile = "Members.txt";
 		
 		//Determine available userID number
 		boolean userExists = false;
