@@ -9,10 +9,10 @@ public class UserMenu {
 	
 	boolean exit;
 	//Student Student1 = new Student();
-	
-	public void displayMenu()
+	String uName;
+	public void displayMenu(String uName)
 	{
-		
+		this.uName = uName;
 		while(!exit)
 		{
 			printMenu();
@@ -26,9 +26,10 @@ public class UserMenu {
 	{
 		System.out.println("User Menu");
 		System.out.println("1. View User History");
-		System.out.println("2. Search ISBN");
+		System.out.println("2. Search by BookID");
 		System.out.println("3. View book inventory");
-		System.out.println("4. Show student");
+                System.out.println("4. Browse by Category");
+		System.out.println("5. Show student");
 		System.out.println("0. Exit");
 	}
 
@@ -70,8 +71,8 @@ public class UserMenu {
 				
 		case 2:
 			//Search user
-			System.out.print("Search ISBN\n");
-			searchISBN();
+			System.out.print("Search BookID\n");
+			searchID();
 			break;
 			
 		case 3:
@@ -79,8 +80,14 @@ public class UserMenu {
 			System.out.println("View book inventory\n");
 			viewBookInv();
 			break;
+                        
+                case 4:
+                        //browse by category
+                        System.out.println("Browse by category\n");
+                        browseCat();
+                        break;
 			
-		case 4:
+		case 5:
 			showStudent();
 		
 		default:
@@ -93,18 +100,27 @@ public class UserMenu {
 	
 	public void viewHistory()
 	{
-		System.out.println("In viewHistory");
+            History h = new History(uName);
+            h.printHistory();
 	}
 	
-	public void searchISBN()
+	public void searchID()
 	{
-		System.out.println("In searchISBN");
+            BookInventory BI = new BookInventory(uName);            
+            BI.searchBookID();
+            BI.writeInventory();
 	}
 	
 	public void viewBookInv()
 	{
-		System.out.println("In viewBookInv");
+            BookInventory BI = new BookInventory(uName);
+            BI.printFullInventory();
 	}
+        public void browseCat(){
+            BookInventory BI = new BookInventory(uName);
+            BI.browse();
+            
+        }
 	
 	public void showStudent()
 	{
