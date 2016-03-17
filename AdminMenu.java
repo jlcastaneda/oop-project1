@@ -50,6 +50,8 @@ public class AdminMenu {
 	
 	private void adminCase(int choice)
 	{
+                Scanner s = new Scanner(System.in);
+                String uName;
 		//System.out.println("In case, choice: "+ choice);
 		
 		switch(choice)
@@ -61,7 +63,12 @@ public class AdminMenu {
 			
 		case 1:
 			//View user's history
-			System.out.print("View user's history\n");
+			
+                        System.out.print("View user's history\n");
+                        System.out.print("Please enter a username: \n");
+                        uName = s.next();
+                        History h = new History(uName);
+                        h.printHistory();
 			break;
 				
 		case 2:
@@ -71,7 +78,9 @@ public class AdminMenu {
 			
 		case 3:
 			//View book inventory
-			System.out.println("view book inventory\n");
+			System.out.println("View book inventory\n");
+                        BookInventory BI = new BookInventory("admin");
+                        BI.printFullInventory();
 			break;
 		
 		default:
