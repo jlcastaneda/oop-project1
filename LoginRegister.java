@@ -123,15 +123,16 @@ public class LoginRegister {
 	             LogUserID = Integer.parseInt(userID);
 	             isStudent = Boolean.parseBoolean(userStudent);
 	             isFaculty = Boolean.parseBoolean(userFaculty);
+
 	             //System.out.println("userID: " + userID);
 	             //System.out.println("Saved email: " + userEmail);
 	             //System.out.println("Saved password: " + userPass);
 	             //System.out.println("Entered email: " + checkEmail);
 	             //System.out.println("Entered password: " + checkPasswd);
-	             System.out.println("Student value: " + userStudent);
-	             System.out.println("Faculty value: " + userFaculty);
-	             System.out.println("isStudent value: " + isStudent);
-	             System.out.println("isFaculty value: " + isFaculty);
+	             //System.out.println("Student value: " + userStudent);
+	             //System.out.println("Faculty value: " + userFaculty);
+	             //System.out.println("isStudent value: " + isStudent);
+	             //System.out.println("isFaculty value: " + isFaculty);
 	                      
 	             if(userEmail.equals(checkEmail))
 	             {
