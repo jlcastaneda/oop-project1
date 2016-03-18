@@ -139,7 +139,8 @@ public class BookInventory {
         System.out.println("6: Law");
         System.out.println("7: Mathematics");
         System.out.println("8: Music");
-        System.out.println("9: Philosophy & Psychology");
+        System.out.println("9: Philosophy");
+        System.out.println("10: Psychology");
         choice = s.nextInt();
         high = (choice * 5) - 1;    //calc's high value
         low = high - 4; //calcs low value
