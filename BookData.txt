@@ -33,3 +33,8 @@
 3070, 0883857367, 15, Math through the Ages, William P. Berlinghoff, 12/01/2003, Mathematical Association, Math
 3080, 0470131594, 20, Calculus: Single Variable, Deborah Hughes-Hallet, 12/02/2008, Wiley Publishing, Math
 3090, 0470089148, 14, Calculus: Single and Multi-variable, Deborah Hughes-Hallet, 12/02/2008, Wiley Publishing, Math
+4000, 0756668611, 18, The Philosophy Book (Big Ideas Simply Explaind), Will Buckingham, 01/17/2011, DK Publishing, Philosophy
+4010, 0764551531, 9, Philosophy for Dummies, Tom Morris, 09/17/1999, IDG Books, Philosophy
+4020, 0830839607, 14, Prelude to Philosophy, Mark W. Foreman, 12/27/2013, IVP Academic, Philosophy
+4030, 0830838767, 8, Philosophy of Religion: Thinking about Faith, C. Stephen Evans, 10/15/2009, IVP Academic, Philosophy
+4040, 0671201581, 12, A History of Western Philosophy, Bertrand Russell, 10/30/1967, Simon & Schuster, Philosophy
