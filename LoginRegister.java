@@ -154,7 +154,7 @@ public class LoginRegister {
 	            		 //Create menu object	            	 
 	            		 UserMenu menu = new UserMenu();
 	            		 //Show user menu
-	            		 menu.displayMenu(uName);
+	            		 menu.displayMenu(uName, 1, 0);
 	            	 }
 	            	 else
 	            	 {
@@ -166,7 +166,7 @@ public class LoginRegister {
 	            		 //Create menu object	            	 
 	            		 UserMenu menu = new UserMenu();
 	            		 //menu.showStudent();
-	            		 menu.displayMenu(uName);
+	            		 menu.displayMenu(uName, 0, 1);
 	            	 }
 	      
 	            
