@@ -1,5 +1,0 @@
-2000, 1449672841, 15, Computer Science Illuminated, Nell Dell, 02/17/2012, Jones & Bartlett, Computer Science
-2010, 1442113987, 20, How Computers Work, Roger Young, 04/17/2009, CreateSpace, Computer Science
-2020, 0131103628, 12, The C Programming Language, 04/01/1988, Prentice Hall, Computer Science
-2030, 0321714113, 15, C++ Primer, Stanley B. Lippman, 08/16/2012, Addison-Weley Professional, Computer Science
-2040, 0988927802, 26, Jumpint into C++, Alex Allain, 04/19/2013, Cprogramming.com, Computer Science
