@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package teamproject;
+package oop_bookmart;
 
 import java.util.Date;
 import java.util.Calendar;
@@ -23,18 +23,33 @@ public class DueDate {
         
     }
     
-    public void setDueDate()
-    {
+    public Date currentDate(){  //added by Josh
         Date date = new Date();
         Calendar c = Calendar.getInstance();
         c.setTime(date);
-        //Increment current date by 14 to get due Date
-        c.add(Calendar.DATE, 14);
+        return date;
+    }
+    
+    
+    public Date dueDate(int student, int staff)  //modified by Josh
+    {
+        int incr = 0;
+        if(student == 1){
+            incr = 7;
+        }
+        if(staff == 1){
+            incr = 14;
+        }
+        Date date = new Date();
+        Calendar c = Calendar.getInstance();
+        c.setTime(date);
+        //Increment current date by incr to get due Date
+        c.add(Calendar.DATE, incr);
         Date newDate = c.getTime();
-        System.out.printf("%s %tB %<te, %<tY\n", 
-                         "Due date:", newDate);
+        //System.out.printf("%s %tB %<te, %<tY\n", 
+        //                 "Due date:", newDate);
         dateDue = newDate;
-        
+        return newDate;
     }
     
     public Date returnDue()
