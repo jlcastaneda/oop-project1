@@ -8,4 +8,13 @@
 1070, 1612680208, 20, Guide to Investing, Robert Kiyosaki, 4/3/2012, Plata Publishing, Business & Economics
 1080, 1937832058, 8, Tax Free Wealth, Tom Wheelwright, 5/26/2015, RDA Press, Business & Economics
 1090, 0471711780, 10, Loopholes of the Rich, Diane Kennedy, 12/20/2004, Wiley, Business & Economics
-1100, 0071807810, 20, How to Pay Zero Taxes, Jeff Schnepper, 12/3/2013, McGraw-Hill, Business & Economics
+2000, 1449672841, 15, Computer Science Illuminated, Nell Dell, 02/17/2012, Jones & Bartlett, Computer Science
+2010, 1442113987, 20, How Computers Work, Roger Young, 04/17/2009, CreateSpace, Computer Science
+2020, 0131103628, 12, The C Programming Language, 04/01/1988, Prentice Hall, Computer Science
+2030, 0321714113, 15, C++ Primer, Stanley B. Lippman, 08/16/2012, Addison-Weley Professional, Computer Science
+2040, 0988927802, 26, Jumpint into C++, Alex Allain, 04/19/2013, Cprogramming.com, Computer Science
+3000, 0141035811, 13, Design as Art, Bruno Munari, 01/09/2008, Penguin UK, Design
+3010, 3836545306, 28, Logo Modernism, Jens Muller, 09/08/2015, Taschen, Design
+3020, 1600583970, 14, Creative Lettering and Beyond, Gabri Krikendall, 11/03/2014, Walter Foster Publishing, Design
+3030, 9780764156151, 8, The Calligraphers Bible, David Harris, 09/01/2003, Barron's Educational Series, Design
+3040, 0133966151, 17, Non-Designers Design Book, Robin Williams, 11/29/2014, Peachpit Press, Design
