@@ -28,3 +28,8 @@
 3020, 1600583970, 14, Creative Lettering and Beyond, Gabri Krikendall, 11/03/2014, Walter Foster Publishing, Design
 3030, 9780764156151, 7, The Calligraphers Bible, David Harris, 09/01/2003, Barron's Educational Series, Design
 3040, 0133966151, 17, Non-Designers Design Book, Robin Williams, 11/29/2014, Peachpit Press, Design
+3050, 0486248232, 8, Mathematics for the Non-mathmatician, Morris Kline, 02/01/1985, Dover Books, Math
+3060, 014014739X, 10, Journey through Genius: Great Theorems of Mathematics, William Dunham, 08/01/1991, Penguin Books, Math
+3070, 0883857367, 15, Math through the Ages, William P. Berlinghoff, 12/01/2003, Mathematical Association, Math
+3080, 0470131594, 20, Calculus: Single Variable, Deborah Hughes-Hallet, 12/02/2008, Wiley Publishing, Math
+3090, 0470089148, 14, Calculus: Single and Multi-variable, Deborah Hughes-Hallet, 12/02/2008, Wiley Publishing, Math
