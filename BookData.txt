@@ -8,16 +8,6 @@
 1070, 1612680208, 20, Guide to Investing, Robert Kiyosaki, 4/3/2012, Plata Publishing, Business & Economics
 1080, 1937832058, 8, Tax Free Wealth, Tom Wheelwright, 5/26/2015, RDA Press, Business & Economics
 1090, 0471711780, 10, Loopholes of the Rich, Diane Kennedy, 12/20/2004, Wiley, Business & Economics
-1110, 0137072759, 5, School Law and the Public Schools: A Practical Guide for Educational Leaders (5th Edition), Nathan L. Essex, 08/27/2012, Pearson, Law
-1120, 110188195X, 15, The Best 173 Law Schools: 2016 Edition, Princeton Review, 10/06/2015, Princeton Review, Law
-1130, 0205484050, 16, School Law: What Every Educator Should Know (A User-Friendly Guide), David Schimmel & Louis Fischer & Leslie R. Stellman, 06/18/2007, Pearson, Law
-1140, 0804125821, 3, Law School Essays That Made a Difference (6th Edition Graduate School Admissions Guides), Princeton Review, 12/09/2014, Princeton Review, Law
-1150, 0135094186, 18, A Teacher's Pocket Guide to School Law (2nd Edition), Nathan L. Essex, 02/01/2010, Pearson, Law
-1160, 0452288525, 10, This is Your Brain on Music: The Science of a Human Obsession, Daniel J. Levitin, 08/28/2007, Plume/Penguin, Music
-1170, 1400033535, 6, Musicophilia: Tales of Music and the Brain (Revised and Expanded Edition), Oliver Sacks, 09/23/2008, Vintage, Music
-1180, 0425220931, 10, The Music Lesson: A Spiritual Search for Growth Through Music, Victor L. Wooten, 04/01/2008, Berkley, Music
-1190, 1501104896, 5, All You Need to Know About the Music Business, Donald S. Passman, 12/01/2015, Simon & Schuster, Music
-1120, 0634006819, 14, The Big Book of Classical Music, Hal Leonard Corp., 08/01/1999, Hal Leonard, Music 
 2000, 1449672841, 15, Computer Science Illuminated, Nell Dell, 02/17/2012, Jones & Bartlett, Computer Science
 2010, 1442113987, 20, How Computers Work, Roger Young, 04/17/2009, CreateSpace, Computer Science
 2020, 0131103628, 12, The C Programming Language, Brian W. Kernighan, 04/01/1988, Prentice Hall, Computer Science
@@ -28,13 +18,33 @@
 3020, 1600583970, 14, Creative Lettering and Beyond, Gabri Krikendall, 11/03/2014, Walter Foster Publishing, Design
 3030, 9780764156151, 7, The Calligraphers Bible, David Harris, 09/01/2003, Barron's Educational Series, Design
 3040, 0133966151, 17, Non-Designers Design Book, Robin Williams, 11/29/2014, Peachpit Press, Design
+3100, B009LMY29S, 10, Education: A Key to Development, Herman Rawat, 10/03/2012, Amazon Digital Services LLC, Education
+3110, 0415589541, 13, Education: The Basics, Kay Wood, 07/26/2011, Routledge, Education
+3120, 0544104404, 20, How Children Succeed, Paul Tough, 07/02/2013, Mariner Books, Education
+3130, 0345803620, 16, The Teacher Wars: A History of America's Most Embattled Profession, Dana Goldstein, 08/04/2015, Anchor, Education
+3140, 1402281005, 12, Confessions of a Bad Teacher (The Shocking Truth...), John Owens, 08/06/2013, Sourcebooks, Education
+1110, 0137072759, 5, School Law and the Public Schools: A Practical Guide for Educational Leaders (5th Edition), Nathan L. Essex, 08/27/2012, Pearson, Law
+1120, 110188195X, 15, The Best 173 Law Schools: 2016 Edition, Princeton Review, 10/06/2015, Princeton Review, Law
+1130, 0205484050, 16, School Law: What Every Educator Should Know (A User-Friendly Guide), David Schimmel & Louis Fischer & Leslie R. Stellman, 06/18/2007, Pearson, Law
+1140, 0804125821, 3, Law School Essays That Made a Difference (6th Edition Graduate School Admissions Guides), Princeton Review, 12/09/2014, Princeton Review, Law
+1150, 0135094186, 18, A Teacher's Pocket Guide to School Law (2nd Edition), Nathan L. Essex, 02/01/2010, Pearson, Law
 3050, 0486248232, 8, Mathematics for the Non-mathmatician, Morris Kline, 02/01/1985, Dover Books, Math
 3060, 014014739X, 10, Journey through Genius: Great Theorems of Mathematics, William Dunham, 08/01/1991, Penguin Books, Math
 3070, 0883857367, 15, Math through the Ages, William P. Berlinghoff, 12/01/2003, Mathematical Association, Math
 3080, 0470131594, 20, Calculus: Single Variable, Deborah Hughes-Hallet, 12/02/2008, Wiley Publishing, Math
 3090, 0470089148, 14, Calculus: Single and Multi-variable, Deborah Hughes-Hallet, 12/02/2008, Wiley Publishing, Math
+1160, 0452288525, 10, This is Your Brain on Music: The Science of a Human Obsession, Daniel J. Levitin, 08/28/2007, Plume/Penguin, Music
+1170, 1400033535, 6, Musicophilia: Tales of Music and the Brain (Revised and Expanded Edition), Oliver Sacks, 09/23/2008, Vintage, Music
+1180, 0425220931, 10, The Music Lesson: A Spiritual Search for Growth Through Music, Victor L. Wooten, 04/01/2008, Berkley, Music
+1190, 1501104896, 5, All You Need to Know About the Music Business, Donald S. Passman, 12/01/2015, Simon & Schuster, Music
+1120, 0634006819, 14, The Big Book of Classical Music, Hal Leonard Corp., 08/01/1999, Hal Leonard, Music 
 4000, 0756668611, 18, The Philosophy Book (Big Ideas Simply Explaind), Will Buckingham, 01/17/2011, DK Publishing, Philosophy
 4010, 0764551531, 9, Philosophy for Dummies, Tom Morris, 09/17/1999, IDG Books, Philosophy
 4020, 0830839607, 14, Prelude to Philosophy, Mark W. Foreman, 12/27/2013, IVP Academic, Philosophy
 4030, 0830838767, 8, Philosophy of Religion: Thinking about Faith, C. Stephen Evans, 10/15/2009, IVP Academic, Philosophy
 4040, 0671201581, 12, A History of Western Philosophy, Bertrand Russell, 10/30/1967, Simon & Schuster, Philosophy
+4050, B009WW5FGG, 10, Beyond the Pleasure Principle, Sigmund Freud, 10/13/2010, Acheron Press, Psychology
+4060, B00JZAO51G, 14, The Theory of Psychoanalysis, Carl Jung, 04/27/2014, Business and Leadership Publishing, Psychology
+4070, B00D1FEJ5S, 12, The Ego and the Id, Sigmund Freud, 05/27/2013, Amazon Digital Services LLC, Psychology
+4080, B00H3RPBDY, 18, A Theorem of Human Motivation, A. H. Maslow, 12/06/2013, Amazon Digital Services LLC, Psychology
+4090, B00L5G1XOU, 13, The Neurotic Constitution, Alfred Adler, 06/19/2014, Business and Leadership Publishing, Psychology
