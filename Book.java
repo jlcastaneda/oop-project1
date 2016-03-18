@@ -36,6 +36,10 @@ public class Book {
             invAmnt--;
         }
     }
+    
+    public void returnBook(){
+        invAmnt++;
+    }
     //overridden toString
     @Override
     public String toString()
