@@ -79,7 +79,7 @@ public class AdminMenu {
 		case 3:
 			//View book inventory
 			System.out.println("View book inventory\n");
-                        BookInventory BI = new BookInventory("admin");
+                        BookInventory BI = new BookInventory("admin", 0, 0);
                         BI.printFullInventory();
 			break;
 		
