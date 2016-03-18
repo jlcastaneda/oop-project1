@@ -19,10 +19,14 @@ public class BookInventory {
     public List<Book> invItem = new ArrayList<>();  //list of objects   
     Scanner s = new Scanner(System.in); //scanner for input
     String uName;   //username
+	int student;
+	int staff;
     
     
-    public BookInventory(String uName){
+    public BookInventory(String uName, int student, int staff){
         this.uName = uName;
+	this.student = student;
+	this.staff = staff;
     }
     
     public void readInventory(){    //reads inventory from file
@@ -71,10 +75,10 @@ public class BookInventory {
     public void printFullInventory(){   //prints the full inventory
         readInventory();
         int x = 0;
-	for(Book each: invItem){
+		for(Book each: invItem){
             System.out.println(x+": "+each);	
             x++;
-	}
+		}
     }
     public void writeInventory(){        //writes inventory to a file
 	try(Writer writer = new BufferedWriter((new OutputStreamWriter(new FileOutputStream("BookData.txt"), "utf-8")))){
@@ -147,14 +151,12 @@ public class BookInventory {
     
     
     //searches inventory based off of Book ID
-    public void searchBookID(){
+    public void searchBookID(String ID){
         readInventory();    //reads inventory
         Scanner s = new Scanner(System.in);
-        String bID = null;
+        String bID = ID;
         int found = 0;
         int count = 0;
-
-            
             System.out.print("Please enter a book ID: ");
             bID = s.next(); //gives book id
             for(Book each: invItem){    //searches through each item in the list
@@ -188,27 +190,71 @@ public class BookInventory {
             else{
                 System.out.println("Item not found with entered ID, moving to menu.");
             }
-            
-        
     }
     
     
     public void checkOut(int invNum){
         //Inventory controller       
         //most operations require the username of the user                
-        //get inventory and print                                              
-        History h = new History(uName);                        
-        //checkoutprocess
-        invItem.get(invNum).checkOut();
-        h.checkOut(invItem.get(invNum));        
-        //Writes Inventory
-        writeInventory();      
-        System.out.println("Check out complete, inventory modified, user history updated.");
-        System.out.println("Date and Time of checkout: ");
-        System.out.println("Date and Time of return: ");
-        System.out.println("Returning to menu.");
-        //print the user's History
+        //get inventory and print        
+        CheckedOut c = new CheckedOut(uName, student, staff);
+        int x = c.countChecked();
+        if(x < c.amnt){
+            History h = new History(uName);                        
+            //checkoutprocess
+            invItem.get(invNum).checkOut();
+            h.checkOut(invItem.get(invNum));
+            c.checkOut(invItem.get(invNum));
+            //Writes Inventory
+            writeInventory();      
+            DueDate d = new DueDate();
+            
+            System.out.println("Check out complete, inventory modified, user history updated.");
+            System.out.println("Date and Time of checkout: "+d.currentDate());
+            System.out.println("Date and Time of return: "+d.dueDate(student, staff));
+            System.out.println("Returning to menu.");
+            //print the user's History
+        }
+        else{
+            System.out.println("You have surpassed your allocated check outs, please return an item first.");
+        }
     }
+    
+    
+    
+    
+    
+    public void returnSearch(String ID){
+        readInventory();    //reads inventory
+        Scanner s = new Scanner(System.in);
+        String bID = ID;
+        int found = 0;
+        int count = 0;
+        for(Book each: invItem){    //searches through each item in the list
+            if(bID.equals(invItem.get(count).bID)){
+                found = 1;
+            }
+            else{
+                count++;
+            }
+        }
+        if(found == 1){ //if found
+            //print item
+            System.out.println("Item Found: "+invItem.get(count));  //print book info
+            invItem.get(count).returnBook();
+            
+        }
+            
+    }
+    
+    public void returnBook(String ID){
+        returnSearch(ID);
+        writeInventory();
+        System.out.println("Item returned successfully.");
+    }
+    
+    
+    
     
     
     
