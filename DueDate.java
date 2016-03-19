@@ -74,4 +74,20 @@ public class DueDate {
         		System.out.println("Error");
         	}
    }
+   
+   //Calculate days book is Overdue
+   public void OverdueCalculate()
+   {
+       Date current = currentDate();
+       Date due = returnDue();
+        
+       //Get difference in current date and due date
+        long diff = current.getTime() - due.getTime();
+        long diffSeconds = diff / 1000 % 60;
+        long diffMinutes = diff / (60 * 1000) % 60;
+        long diffHours = diff / (60 * 60 * 1000);
+        int diffInDays = (int) ((current.getTime() - due.getTime()) / (1000 * 60 * 60 * 24));       
+        System.out.println("This book is " + diffInDays + " days overdue.");
+                         
+   }
 }
